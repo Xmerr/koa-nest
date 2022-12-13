@@ -1,0 +1,21 @@
+insert into Users (
+  first_name,
+  last_name
+)
+  values
+  (
+    'David',
+    'Tow'
+  ),
+  (
+    'John',
+    'Smith'
+  ),
+  (
+    'Bec',
+    'Hill'
+  ),
+  (
+    'Jane',
+    'Doe'
+  );
