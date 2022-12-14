@@ -9,6 +9,7 @@ Comparing the differences between koa and nest
   - `POST /users`
     - Creates a user
   - `GET /users`
+    - Console logs the currently logged in user
     - Returns all the users
   - `GET /users/:id`
     - Returns the details of just the passed in user id
@@ -35,4 +36,3 @@ Comparing the differences between koa and nest
 
 
 ## Remaining tasks for comparison
-- Nest authorization

@@ -15,6 +15,7 @@ router.post('/', async ctx => {
 });
 
 router.get('/', async ctx => {
+  console.log(ctx.state.user);
   const users = await getAllUsers();
   ctx.body = users;
 });

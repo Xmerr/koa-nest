@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Post, Put, Req } from '@nestjs/common';
 import { Todos } from 'src/todos/todos.entity';
 import { Users } from './users.entity';
 import { UsersService } from './users.service';
@@ -14,7 +14,9 @@ export class UsersController {
   }
 
   @Get()
-  public findAll(): Promise<Users[]> {
+  public findAll(@Req() req: any): Promise<Users[]> {
+    // eslint-disable-next-line no-console
+    console.log(req.app.locals.user);
     return this.usersService.findAll();
   }
 
